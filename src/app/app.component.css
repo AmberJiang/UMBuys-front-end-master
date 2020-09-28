@@ -1,0 +1,14 @@
+  /**
+   * Date: 8/22/2020
+   * Description: App component css
+   * Author: Auto Generated
+  */
+  .footer-link a{
+    color:#343a40 !important;
+    text-decoration: none;
+  }
+  .footer-link a:nth-child(-n+4)::after {
+    content: '•';
+    margin-right: 2px;
+    margin-left: 2px;
+  }

@@ -1,0 +1,229 @@
+  /**
+   * Date: 8/22/2020
+   * Description: Home component css
+   * Author: Nanyan Jiang
+  */
+
+/* responsive layout editor: Yiwei Yao 9/13/2020*/
+/* start */
+
+fa-icon{
+  margin-right: 5px;
+}
+@media (min-width: 250px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    border: solid;
+    background-color:blue;
+    grid-column: 1 / -1;
+  }
+  .sb {
+    display:none;
+  }
+}
+
+@media (min-width: 576px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color:blue;
+    grid-column: 1 / -1;
+  }
+  .sb {
+    display:none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 1 / -1;
+  }
+  .sb {
+    display:none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 1 / -1;
+  }
+  .sb {
+    display:none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 320px repeat(3, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 2 / -1;
+  }
+  .sb {
+    grid-column: 1 / 2;
+    display:block;
+  }
+}
+
+@media (min-width: 1420px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 320px, repeat(4, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 2 / -1;
+  }
+  .sb {
+    grid-column: 1 / 2;
+    display:block;
+  }
+}
+
+@media (min-width: 1580px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 320px, repeat(5, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 2 / -1;
+  }
+  .sb {
+    grid-column: 1 / 2;
+    display:block;
+  }
+}
+
+@media (min-width: 1900px) {
+  .hp{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 320px, repeat(6, 1fr);
+  }
+  .gallery {
+    border: solid;
+    background-color: blue;
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    grid-column: 2 / -1;
+  }
+  .sb {
+    grid-column: 1 / 2;
+    display:block;
+  }
+}
+/* end */
+
+/* slide bar card css added by Yiwei Yao*/
+/* added address filter container by NJ*/
+/* start */
+.sb {
+}
+.address-filter-container{
+  position: fixed;
+  width: 320px;
+  top: 71px;
+}
+.address-filter{
+  height: 82px;
+}
+.bc-container {
+  position: fixed;
+  width: 320px;
+  top: 159.6px;
+}
+.bc {
+  height: 100px;
+  text-align: center;
+}
+.cg-container{
+  position: fixed;
+  width: 320px;
+  top: 268.6px;
+}
+.cg {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.cg-title {
+  padding:8px;
+}
+
+.cg-item {
+  overflow-y: auto;
+}
+.cg-item button{
+  padding:8px;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  text-align: left;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  margin-left: 0.4px;
+}
+.cg-item button:hover {
+  background-color: #f1f2f6;
+  color: #000000;
+}
+
+.cg-item button:focus {
+  outline:none !important;
+}
+/* end */
+
+
+/* slide bar search */
+.sb-search {
+  padding: 10px;
+  /* padding-top: 20px; */
+}
